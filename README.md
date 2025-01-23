@@ -1,5 +1,9 @@
 # Laravel Docker Setup
 
+This project is a Laravel application containerized using Docker.
+
+=======================================================================================
+
 ## Prerequisites
 - Docker
 - Docker Compose
@@ -53,24 +57,24 @@ laravel-docker/
     ```bash
     cp .env.example .env
     ```
-2. Build image with command :
+3. Build image with command :
 
    ```bash 
    make build
    ```
-3. Start container with command:
+4. Start container with command:
 
    ```bash 
    make up
    ```
-4. Delete the .gitkeep file in the src folder
+5. Delete the .gitkeep file in the src folder
 
-5. Create Project laravel with Composer:
+6. Create Project laravel with Composer:
 
     ```bash
     make composer create-project laravel/laravel .
     ```
-6. Access the application at `http://localhost`
+7. Access the application at `http://localhost`
 
 ## Contributing
 1. Fork the repository
