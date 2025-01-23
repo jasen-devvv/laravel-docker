@@ -46,7 +46,13 @@ laravel-docker/
 
     ```bash
     git clone https://github.com/jasen-devvv/laravel-docker.git
+    cd laravel-docker
     ```   
+2. Copy the .env.example file
+
+    ```bash
+    cp .env.example .env
+    ```
 2. Build image with command :
 
    ```bash 
