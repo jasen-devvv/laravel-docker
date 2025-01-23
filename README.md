@@ -24,6 +24,7 @@ laravel-docker/
 │   ├── .env
 │   └── .env.example
 ├── src/
+│   └── .gitkeep
 ├── docker-compose.yml
 ├── Makefile
 └── README.md
@@ -56,7 +57,14 @@ laravel-docker/
    ```bash 
    make up
    ```
-4. Access the application at `http://localhost`
+4. Delete the .gitkeep file in the src folder
+
+5. Create Project laravel with Composer:
+
+    ```bash
+    make composer create-project laravel/laravel .
+    ```
+6. Access the application at `http://localhost`
 
 ## Contributing
 1. Fork the repository
