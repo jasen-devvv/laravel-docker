@@ -14,7 +14,7 @@ This project is a Laravel application containerized using Docker.
 - NGINX 
 - COMPOSER 
 
-## Project Structure
+## Structure Folder
 ```
 laravel-docker/
 ├── docker/
@@ -25,10 +25,10 @@ laravel-docker/
 │   │   └── php.ini
 │   ├── mysql/
 │   │   └── init.sql
-│   ├── .env
-│   └── .env.example
 ├── src/
 │   └── .gitkeep
+├── .env
+├── .env.example
 ├── docker-compose.yml
 ├── Makefile
 └── README.md
@@ -57,24 +57,32 @@ laravel-docker/
     ```bash
     cp .env.example .env
     ```
-3. Build image with command :
+
+3. Check id and gid with command:
+    ```bash
+    id
+    ```
+    changes id and gid in .env file
+
+
+4. Build image with command:
 
    ```bash 
    make build
    ```
-4. Start container with command:
+5. Start container with command:
 
    ```bash 
    make up
    ```
-5. Delete the .gitkeep file in the src folder
+6. Delete the .gitkeep file in the src folder
 
-6. Create Project laravel with Composer:
+7. Create Project laravel with Composer:
 
     ```bash
     make composer create-project laravel/laravel .
     ```
-7. Access the application at `http://localhost`
+8. Access the application at `http://localhost`
 
 ## Contributing
 1. Fork the repository
