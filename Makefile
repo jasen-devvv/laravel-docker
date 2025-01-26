@@ -1,7 +1,7 @@
 .PHONY: up down restart build clean logs db-shell composer artisan php
 
 # Load Environtment
-include ./docker/.env
+include .env
 
 up:
 	docker-compose up -d
