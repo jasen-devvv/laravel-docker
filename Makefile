@@ -26,7 +26,7 @@ db-shell:
 	docker-compose exec mysql mysql -u ${MYSQL_USER} -p 
 
 composer:
-	docker-compose run --rm composer $(filter-out $@,$(MAKECMDGOALS))
+	docker-compose exec php composer $(filter-out $@,$(MAKECMDGOALS))
 
 artisan:
 	docker-compose exec php php artisan $(filter-out $@,$(MAKECMDGOALS))
